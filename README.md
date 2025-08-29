@@ -55,6 +55,13 @@ is included to trace each entry back to its PDF path (helpful for QA).
 
 > Note: Publishing data inside PDFs is not standardized. These heuristics aim to be robust across many layouts but will not be perfect for all files. The script is designed to be _fail‑soft_: when unsure, it outputs `Unknown`.
 
+##🚀 Features
+
+Extracts text from digital and scanned PDFs
+OCR support using Tesseract
+Creates a clean Excel catalog (catalog.xlsx)
+Command-line interface with customizable input/output paths
+
 ## Tips for Better Results
 
 - Provide text‑based PDFs when possible. For scans, use `--ocr` (slower).
@@ -64,10 +71,18 @@ is included to trace each entry back to its PDF path (helpful for QA).
 ## Project Structure
 
 ```
-auto_catalog.py
-requirements.txt
-README.md
+auto-catalog/
+│── auto_catalog.py       # Main script
+│── requirements.txt      # Dependencies
+│── README.md             # Documentation
+│── pdf/                  # Folder to store PDF files
+│── catalog.xlsx          # Output Excel file (generated)
+
 ```
+##📸 Screenshots
+![Excel View](https://github.com/user-attachments/assets/15a171bc-b9af-4737-873f-fa7c184bf880)
+![Terminal command run](https://github.com/user-attachments/assets/e299cfff-201b-455f-987f-f3e6808ac860)
+
 
 ## License
 
